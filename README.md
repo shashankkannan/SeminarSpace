@@ -10,4 +10,7 @@ SeminarSpace is a thoughtfully designed software solution aimed at streamlining 
 
 - **Data Management with MongoDB:** The application makes use of MongoDB for storing and retrieving data, providing a reliable and scalable solution for evolving data requirements.
 
+
+The main.py file initializes a Flask application, creates a MongoDB connection with the specified URI, and registers the task_controller blueprint, which likely contains route definitions and related functionalities. When the script is executed directly, it starts the Flask development server in debug mode, enabling detailed error messages and automatic server reloads upon code changes for smoother development. The application is configured to connect to a MongoDB database named 'ADT_project' running on the localhost at port 27017.
+
 SeminarSpace combines simplicity with effective technology, offering a formal and user-friendly tool for seminar organizers and administrators.
