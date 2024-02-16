@@ -42,7 +42,7 @@ SeminarSpace combines simplicity with effective technology, offering a formal an
   - Additional Features: Users can register for multiple workshops, and attendance data is updated accordingly. The system ensures that duplicate entries are avoided when updating workshop lists.
 
 
-1. Clone the Repository:
+1. **Clone the Repository:**
 
 Clone your project repository from GitHub to your local machine.
 <pre>
@@ -51,11 +51,11 @@ git clone https://github.com/shashankkannan/SeminarSpace.git
   </code>
 </pre>
 
-2. Open Project in PyCharm:
+2. **Open Project in PyCharm:**
   - Open PyCharm.
   - Select "Open" and choose your project directory.
 
-3. Create Virtual Environment:
+3. **Create Virtual Environment:**
   - Open the terminal in PyCharm.
   - Run the following commands to create a virtual environment and activate it:
     <pre>
@@ -65,7 +65,7 @@ source venv/bin/activate  # On Windows, use 'venv\Scripts\activate'
   </code>
 </pre>
 
-4. Install Dependencies:
+4. **Install Dependencies:**
   - Install the required Python packages:
 <pre>
   <code id="gitCloneCommand" class="bash">
