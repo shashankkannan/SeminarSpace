@@ -18,3 +18,30 @@ In the **templates folder, HTML files** play a crucial role in defining the stru
 The **task_controller.py in controllers folder** module in the Seminar Space project is a Flask Blueprint responsible for handling various tasks related to seminar attendance, workshop registration, and user interactions. It encompasses routes for rendering HTML templates, fetching data from MongoDB, registering students and workshops, processing unknown faces for attendance, and managing email communication. The controller efficiently integrates with the main Flask application, using routes and functions to ensure a seamless flow of data and actions between the frontend and backend components. From capturing and registering photos to handling workshop registrations and email communications, the 'task_controller' plays a pivotal role in orchestrating the core functionalities of the Seminar Space software.
 
 SeminarSpace combines simplicity with effective technology, offering a formal and user-friendly tool for seminar organizers and administrators.
+
+Application flow:
+
+User Registration: 
+  - Users access the registration page (register_page.html) to provide their details. They upload a photo, which is saved in the ‘data/known’ directory. The        registration data, including face encodings, is stored in the MongoDB collection (‘face_encodings’).
+
+Workshop Management: 
+  - Administrators use the web application to upload workshop details, including the workshop name and presenter’s name.
+  - Workshop data is stored in the MongoDB collection (‘workshop_dets’). Email notifications are sent to registered users informing them about upcoming         
+    workshops/seminars.
+
+Attendance Capture: 
+  - On the day of the workshop, the ‘capture_photo.html’ page is used to capture images. Face recognition is performed on the captured images using the     
+    ‘face_recognition’ library. Captured photos are temporarily stored in the ‘data/unknown’ directory. Captured images are compared with the face encodings of 
+    registered users. If a match is found, the attendee’s name is recorded, and the attendance count is updated in the MongoDB collection. The workshop name is 
+    added to the user’s ‘workshop_list’ if not already present.
+
+Results Display: 
+  - Results of the attendance capture are displayed on the dashboard. A list of attendees and matched records is shown.
+  
+Clearing Data: 
+  - Administrators have the option to clear registered users, attendance lists, or workshop data. The ‘clear_registered_users’ and ‘clear_attendance_list’     
+    routes handle the data clearance.
+
+Toast Notifications: 
+  - Toast notifications are used for success and error messages, providing real-time feedback on user actions.
+  - Additional Features: Users can register for multiple workshops, and attendance data is updated accordingly. The system ensures that duplicate entries are       avoided when updating workshop lists.
