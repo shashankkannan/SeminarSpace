@@ -67,6 +67,7 @@ git clone https://github.com/shashankkannan/SeminarSpace.git
 
 4. **Install Dependencies:**
   - Install the required Python packages:
+    
 <pre>
   <code id="gitCloneCommand" class="bash">
     pip install -r requirements.txt
