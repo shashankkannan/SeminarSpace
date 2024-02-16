@@ -64,3 +64,20 @@ git clone https://github.com/shashankkannan/SeminarSpace.git
     pip install -r requirements.txt
     </code>
 </pre>
+
+4. **Configure Flask App:**
+
+  - Set the Flask application in PyCharm:
+  - Right-click on the app.py file.
+  - Select "Run app".
+
+5. **Run the Application:**
+
+  a. Start the Flask development server:
+    - Run the application by clicking the green "Run" button in PyCharm.
+  b. Access the Application:
+    - Open your web browser and go to http://127.0.0.1:5000/ or http://localhost:5000/ to access your Flask application.
+
+**Additional Notes:**
+  - Check the console in PyCharm for any error messages or logs.
+  - If you have MongoDB, ensure it's running, and your Flask application is configured to connect to it.
