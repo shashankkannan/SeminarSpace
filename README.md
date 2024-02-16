@@ -60,8 +60,8 @@ git clone https://github.com/shashankkannan/SeminarSpace.git
   - Run the following commands to create a virtual environment and activate it:
     <pre>
   <code id="gitCloneCommand" class="bash">
-python -m venv venv
-source venv/bin/activate  # On Windows, use 'venv\Scripts\activate'
+      python -m venv venv
+      source venv/bin/activate  # On Windows, use 'venv\Scripts\activate'
   </code>
 </pre>
 
